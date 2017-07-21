@@ -1,0 +1,92 @@
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main, .list{
+  color: #fff;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.hamburger{
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px 20px 0 0;
+  top: 0;
+}
+
+.medialist{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin: 10px 0 0 20px;
+  top:0;
+}
+
+.list{
+  position: absolute;
+  text-align: center;
+  align-content: stretch;
+  word-spacing: 250px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  font-size: 2em;
+}
+li{
+    display: inline;
+}
+
+.main{
+  align-content: center;
+  position: fixed;
+  text-align: center;
+  display: block;
+  justify-content: space-around;
+  left: 40%;
+  top: 30%;
+}
+
+.your{
+  font-size: 5em;
+}
+
+.portfolio{
+  font-size: 1em;
+}
+
+.arrow{
+  bottom: 0;
+  left: 50%;
+  align-content: center;
+  position: fixed;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger{
+    display:none;
+  }
+  .medialist{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .list{
+    display: none;
+  }
+}
